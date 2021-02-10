@@ -17,7 +17,7 @@
 using System;
 using System.Globalization;  // needed for title case
 using System.Collections.Generic;  // needed fot list array
-using BankingLibrary;
+using BankingLibrary;  // moved to it's own dir/library
 
 namespace Banking
 {
