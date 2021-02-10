@@ -1,4 +1,14 @@
-﻿using System;
+﻿/***************************************************************
+* Name        : stringManipulation
+* Author      : Anthony Hamlin
+* Created     : 02/10/2021
+* Version     : 1.0
+* OS          : Windows 10, Visual Studio 2019 community
+* Copyright   : Work based on needed
+*               specifications or project scope
+* Description : Basic string manipulation using upper, lower, pad and trim.        
+***************************************************************/
+using System;
 
 namespace stringManipulation
 {
