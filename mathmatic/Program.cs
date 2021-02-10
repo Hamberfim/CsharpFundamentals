@@ -90,7 +90,7 @@ namespace mathmatic
             int max = (a > b) ? a : b;
             Console.WriteLine("\tMax is " + max);
 
-            Console.ReadKey();
+            Console.WriteLine("\n\n\n");  // push exit message down
         }
     }
 }
