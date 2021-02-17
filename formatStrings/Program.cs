@@ -1,4 +1,14 @@
-﻿using System;
+﻿/***************************************************************
+* Name        : formatStrings
+* Author      : Anthony Hamlin
+* Created     : 02/17/2021
+* Version     : 1.0
+* OS          : Windows 10, Visual Studio 2019 community
+* Copyright   : Work based on needed
+*               specifications or project scope
+* Description : ToString formating, formate specifiers, Plus other ways      
+***************************************************************/
+using System;
 
 namespace formatStrings
 {
