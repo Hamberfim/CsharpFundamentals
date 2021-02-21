@@ -6,7 +6,7 @@
 * OS          : Windows 10, Visual Studio 2019 community
 * Copyright   : Work based on needed
 *               specifications or project scope
-* Description : write a file        
+* Description : write a file -  program will not work with Norton av running because it try's to create a registry key
 ***************************************************************/
 using System;
 using System.IO;
@@ -31,6 +31,9 @@ namespace fileWriteTest
             string projDir = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(path)));  // each call gets its parent directory
             Console.WriteLine($"Get the projectdirectory {projDir}");  // write/read file at this directory
             Console.WriteLine();  //space in output
+
+            // absolute path - anti-virus issue
+            // projDir = "C:\\Users\\adhamlin\\Documents\\GitHub\\Csharp_pubs\\CsharpFundamentals\\fileWriteTest";
 
             string phrase = "\r\n\tI never saw a man who looked";  // carrage return, new line, tab
             phrase += "\r\n\twith such a wistful eye";
