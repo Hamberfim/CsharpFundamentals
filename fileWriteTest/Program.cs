@@ -28,23 +28,27 @@ namespace fileWriteTest
             // When ran path is '...\<current project directory>\bin\Debug\netcoreapp3.1'
             string path = Directory.GetCurrentDirectory();
             // I wan to use a relative path to the project directory - this directory/control may not be correct if the app was deployed
-            Console.WriteLine($"The current full directory is {path}");
+            Console.WriteLine($"Current directory is {path}");
 
             // Write ro Project directory - up three directories (NOTE: 'Path' is not the same as 'path')
             string projDir = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(path)));  // each call gets its parent directory
-            Console.WriteLine($"Get the projectdirectory {projDir}");  // write/read file at this directory
+            Console.WriteLine($"Project directory is {projDir}");  // write/read file at this directory
             Console.WriteLine();  //space in output
 
             // absolute path - anti-virus issue
             // projDir = "C:\\Users\\adhamlin\\Documents\\GitHub\\Csharp_pubs\\CsharpFundamentals\\fileWriteTest";
 
-            string phrase = "\tI never saw a man who looked";  // carrage return, new line, tab
+            string phrase = "\t'The Ballad of Reading Gaol'";  // carrage return, new line, tab
+            phrase += "\r\n\tI never saw a man who looked";
             phrase += "\r\n\twith such a wistful eye";
             phrase += "\r\n\tupon that little text of blue";
             phrase += "\r\n\twhich prisoners call the sky";
+            phrase += "\r\n\tAnd at every drifting cloud that went";
+            phrase += "\r\n\tWith sails of silver by.";
+            phrase += "\r\n\t\t~Oscar Wilde";
 
 
-            // check if text file exists
+            /*// check if text file exists - NOT USING - it try's to create a registry key and is blocked by Norton 360 AV
             if(File.Exists(projDir))
             {
                 Console.WriteLine($"File Already Exist as: {projDir}");
@@ -64,7 +68,7 @@ namespace fileWriteTest
             }
             Console.WriteLine("^^^ Using 'File.WriteAllText' attempt completed ^^^");
             Console.WriteLine();  //space in output
-            Console.WriteLine();  //space in output
+            Console.WriteLine();  //space in output*/
 
             // ======= USING StreamWriter =======
             // will overwrite existing file(s)
@@ -90,7 +94,8 @@ namespace fileWriteTest
             Console.WriteLine();  //space in output
 
 
-            Console.WriteLine("===== READING FILE =====");
+            Console.WriteLine("===== Reading Text FILE back into Console=====");
+            Console.WriteLine();  //space in output
             try
             {
                 // ======= USING StreamReader =======
