@@ -1,4 +1,16 @@
-﻿using System;
+﻿/***************************************************************
+* Name        : fileStreamWrite
+* Author      : Anthony Hamlin
+* Created     : 02/22/2021 
+* Version     : 1.0
+* OS          : Windows 10, Visual Studio 2019 community
+* Copyright   : Work based on needed
+*               specifications or project scope
+*               
+* Description : Write/Append a file - using StreamWriter
+*               Read a file - using StreamReader
+***************************************************************/
+using System;
 using System.IO;
 
 namespace fileStreamWrite
