@@ -6,7 +6,7 @@
 * OS          : Windows 10, Visual Studio 2019 community
 * Copyright   : Work based on needed
 *               specifications or project scope
-* Description : write a file - base program usinf File.WriteAllText 
+* Description : write a file - base program using File.WriteAllText 
 *               will not work with Norton av running 
 *               because it try's to create a registry key.
 *               Using StreamWriter instead
