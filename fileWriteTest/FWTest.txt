@@ -6,7 +6,4 @@
 	And at every drifting cloud that went
 	With sails of silver by.
 		~Oscar Wilde
-
-
-Hello World!!
-~From the StreamWriter class
+	more from 'The Ballad of Reading Gaol'		(Oscar Wilde - 1898)
