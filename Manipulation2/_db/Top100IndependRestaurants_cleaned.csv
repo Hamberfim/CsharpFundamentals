@@ -1,0 +1,101 @@
+Rank,Restaurant,Sales,City,State
+1,Carmine's (Times Square),39080335,New York,N.Y.
+2,The Boathouse Orlando,35218364,Orlando ,Fla.
+3,Old Ebbitt Grill,29104017,Washington,D.C.
+4,LAVO Italian Restaurant & Nightclub,26916180,New York,N.Y.
+5,Bryant Park Grill & Cafe,26900000,New York,N.Y.
+6,Gibsons Bar & Steakhouse,25409952,Chicago,Ill.
+7,Top of the World at the STRAT,25233543,Las Vegas,Nev.
+8,Maple & Ash,24837595,Chicago,Ill.
+9,Balthazar,24547800,New York,N.Y.
+10,Smith & Wollensky,24501000,New York,N.Y.
+11,Angus Barn,24268160,Raleigh,N.C.
+12,Prime 112,23800000,Miami Beach,Fla.
+13,Joe's Seafood Prime Steak & Stone Crab,23660000,Washington,D.C.
+14,Junior's (Times Square),23640652,New York,N.Y.
+15,The Hamilton,23138062,Washington,D.C.
+16,Joe's Seafood Prime Steak & Stone Crab,22981600,Chicago,Ill.
+17,Joe's Seafood Prime Steak & Stone Crab,22859400,Las Vegas,Nev.
+18,Gibsons Italia,22749232,Chicago,Ill.
+19,Komodo,22500000,Miami,Fla.
+20,Buddakan,22395577,New York,N.Y.
+21,Bazaar Meat by Jose Andres,22181607,Las Vegas,Nev.
+22,SW Steakhouse,21523650,Las Vegas,Nev.
+23,St. Elmo Steak House,21422141,Indianapolis,Ind.
+24,RPM Steak,20853300,Chicago,Ill.
+25,Mon Ami Gabi,20120210,Las Vegas,Nev.
+26,Gibsons Bar & Steakhouse,19831818,Oak Brook,Ill.
+27,Paddlefish,19829500,Orlando ,Fla.
+28,Taste of Texas,19530159,Houston,Texas
+29,Parc,19379153,Philadelphia,Pa.
+30,Bob Chinn's Crab House,18687601,Wheeling,Ill.
+31,Quality Meats,18678000,New York,N.Y.
+32,Del Posto,18625033,New York,N.Y.
+33,Shooters Waterfront,18601433,Ft. Lauderdale,Fla.
+34,Bottega Louie,18521000,Los Angeles,Calif.
+35,Le Diplomate,18490719,Washington,D.C.
+36,Gibsons Bar & Steakhouse,18483056,Rosemont,Ill.
+37,Lavo Italian Restaurant & Lounge,18386262,Las Vegas,Nev.
+38,Prime Steakhouse,18248030,Las Vegas,Nev.
+39,Makoto,18216906,Bal Harbour,Fla.
+40,Original Joe's Westlake,18159612,Daly City,Calif.
+41,Shaw's Crab House,17965500,Chicago,Ill.
+42,Founding Farmers,17910045,Washington,D.C.
+43,Junior's (49th Street),17834390,New York,N.Y.
+44,Chops Lobster Bar,17816450,Atlanta,Ga.
+45,Chicago Cut Steakhouse,17743720,Chicago,Ill.
+46,Swift & Sons,17637400,Chicago,Ill.
+47,Harris Ranch Inn & Restaurant,17599468,Coalinga,Calif.
+48,Sparks Steak House,17519030,New York,N.Y.
+49,Quality Italian,17519000,New York,N.Y.
+50,Frankenmuth Bavarian Inn,17388751,Frankenmuth,Mich.
+51,Tavern on the Green,17212800,New York,N.Y.
+52,Abe & Louie's,17063477,Boston,Mass.
+53,Rusty Pelican,16981741,Miami,Fla.
+54,Beauty & Essex (New York City),16364050,New York,N.Y.
+55,Grand Central Oyster Bar,16304883,New York,N.Y.
+56,Delmonico Steakhouse,16154000,Las Vegas,Nev.
+57,Portland City Grill,16111510,Portland,Ore.
+58,Zehnder's of Frankenmuth,16063684,Frankenmuth,Mich.
+59,The Rustic Inn,15700000,Ft. Lauderdale,Fla.
+60,Harry Caray's Italian Steakhouse,15680000,Chicago,Ill.
+61,Keens Steakhouse,15629700,New York,N.Y.
+62,The Lobster House,15450000,Cape May,N.J.
+63,China Live,15106280,San Francisco,Calif.
+64,Prime & Provisions,15100000,Chicago,Ill.
+65,Carmine's (Las Vegas),15067804,Las Vegas,Nev.
+66,Swan,1.50E+07,Miami,Fla.
+67,15th Street Fisheries,14978103,Fort Lauderdale,Fla.
+68,Atlanta Fish Market,14972300,Atlanta,Ga.
+69,Acme Feed & Seed,14897125,Nashville,Tenn.
+70,Hugo's Frog Bar & Fish House,14790123,Chicago,Ill.
+71,Cliff House,14465847,San Francisco,Calif.
+72,Castaway Burbank,14407413,Burbank,Calif.
+73,Matt's El Rancho,14381904,Austin,Texas
+74,Timberline Steaks and Grille,14362103,Denver,Colo.
+75,Beauty & Essex (Las Vegas),14130500,Las Vegas,Nev.
+76,Carmine's (Atlantic City),13987843,Atlantic City,N.J.
+77,Junior's (Brooklyn),13908292,New York,N.Y.
+78,Quartino Ristorante & Wine Bar,13854856,Chicago,Ill.
+79,Paradise Cove Beach Cafe,13654113,Malibu,Calif.
+80,BOA Steakhouse ,13552485,West Hollywood,Calif.
+81,Original Joe's,13177468,San Francisco,Calif.
+82,Founding Farmers,13102742,McLean,Va.
+83,Siena Tavern,13100000,Chicago,Ill.
+84,Girl & the Goat,12894700,Chicago,Ill.
+85,Tavern on Rush,12884000,Chicago,Ill.
+86,Harry & Izzy's Circle Centre,12809921,Indianapolis,Ind.
+87,Scoma's,12713394,San Francisco,Calif.
+88,Farmers Fishers Bakers,12572109,Washington,D.C.
+89,Southern Steak & Oyster,12566618,Nashville,Tenn.
+90,Big Texan Steak Ranch,12505200,Amarillo,Texas
+91,Park Avenue,12498000,New York,N.Y.
+92,Farmers & Distillers,12278839,Washington,D.C.
+93,Virgil's Real Barbecue,12245998,New York,N.Y.
+94,Carmine's,12228168,Washington,D.C.
+95,Franciscan Crab Restaurant,12218147,San Francisco,Calif.
+96,George's at the Cove,12194000,La Jolla,Calif.
+97,Le Coucou,12187523,New York,N.Y.
+98,Mi Vida,12032014,Washington,D.C.
+99,Upland,11965564,New York,N.Y.
+100,Virgil's Real Barbecue,11391678,Las Vegas,Nev.

@@ -1,0 +1,251 @@
+Rank,Restaurant,Sales,City,State
+1,McDonald's,40412,NA,NA
+2,Starbucks,21380,NA,NA
+3,Chick-fil-A,11320,NA,NA
+4,Taco Bell,11293,NA,NA
+5,Burger King,10204,NA,NA
+6,Subway,10200,NA,NA
+7,Wendy's,9762,NA,NA
+8,Dunkin',9228,NA,NA
+9,Domino's,7044,NA,NA
+10,Panera Bread,5890,NA,NA
+11,Pizza Hut,5558,NA,NA
+12,Chipotle Mexican Grill,5509,NA,NA
+13,Sonic Drive-In,4687,NA,NA
+14,KFC,4546,NA,NA
+15,Olive Garden,4287,NA,NA
+16,Applebee's,4085,NA,NA
+17,Panda Express,3946,NA,NA
+18,Arby's,3884,NA,NA
+19,Popeyes Louisiana Kitchen,3812,NA,NA
+20,Little Caesars,3811,NA,NA
+21,Dairy Queen,3760,NA,NA
+22,Buffalo Wild Wings,3669,NA,NA
+23,Chili's Grill & Bar,3563,NA,NA
+24,Jack in the Box,3504,NA,NA
+25,IHOP,3266,NA,NA
+26,Texas Roadhouse,3016,NA,NA
+27,Denny's,2691,NA,NA
+28,Papa John's,2638,NA,NA
+29,Outback Steakhouse,2635,NA,NA
+30,Whataburger,2556,NA,NA
+31,Red Lobster,2490,NA,NA
+32,Cracker Barrel,2482,NA,NA
+33,The Cheesecake Factory,2180,NA,NA
+34,Jimmy John's Gourmet Sandwiches,2105,NA,NA
+35,Hardee's,2020,NA,NA
+36,Zaxby's,1886,NA,NA
+37,LongHorn Steakhouse,1867,NA,NA
+38,Culver's,1795,NA,NA
+39,Golden Corral,1746,NA,NA
+40,Five Guys Burgers and Fries,1661,NA,NA
+41,Red Robin Gourmet Burgers and Brews,1548,NA,NA
+42,Raising Cane's Chicken Fingers,1466,NA,NA
+43,Carl's Jr.,1423,NA,NA
+44,Wingstop,1363,NA,NA
+45,Waffle House,1344,NA,NA
+46,Jersey Mike's Subs,1340,NA,NA
+47,Bojangles',1331,NA,NA
+48,BJ's Restaurant & Brewhouse,1161,NA,NA
+49,TGI Fridays,1085,NA,NA
+50,In-N-Out Burger,957,NA,NA
+51,Steak 'n Shake,950,NA,NA
+52,P.F. Chang's,917,NA,NA
+53,Qdoba Mexican Eats,901,NA,NA
+54,El Pollo Loco,894,NA,NA
+55,Krispy Kreme,887,NA,NA
+56,Hooters,858,NA,NA
+57,Del Taco,850,NA,NA
+58,Firehouse Subs,832,NA,NA
+59,Bob Evans,795,NA,NA
+60,Moe's Southwest Grill,749,NA,NA
+61,Papa Murphy's Pizza,748,NA,NA
+62,Ruby Tuesday,731,NA,NA
+63,McAlister's Deli,725,NA,NA
+64,Cheddar's Scratch Kitchen,724,NA,NA
+65,Church's Chicken,716,NA,NA
+66,Tim Hortons,714,Toronto,ON
+67,Ruth's Chris Steak House,703,Winter Park,FL
+68,Carrabba's Italian Grill,653,NA,NA
+69,Jason's Deli,647,NA,NA
+70,Marco's Pizza,628,NA,NA
+71,Shake Shack,622,NA,NA
+72,California Pizza Kitchen,621,NA,NA
+73,Baskin-Robbins,615,NA,NA
+74,Yard House,609,NA,NA
+75,Bonefish Grill,587,NA,NA
+76,White Castle,579,NA,NA
+77,Tropical Smoothie Cafe,576,NA,NA
+78,Dave & Buster's,571,Dallas,TX
+79,Dutch Bros. Coffee,567,NA,NA
+80,Captain D's Seafood Kitchen,561,NA,NA
+81,Auntie Anne's,559,NA,NA
+82,First Watch,558,NA,NA
+83,Perkins Restaurant & Bakery,541,NA,NA
+84,Freddy's Frozen Custard & Steakburgers,535,NA,NA
+85,Checkers Drive-In Restaurants,535,NA,NA
+86,Noodles & Company,533,NA,NA
+87,Einstein Bros. Bagels,517,NA,NA
+88,Jamba,514,NA,NA
+89,Portillo's,505,NA,NA
+90,Boston Market,501,NA,NA
+91,The Habit Burger Grill,500,NA,NA
+92,Logan's Roadhouse,496,NA,NA
+93,MOD Pizza,483,NA,NA
+94,Smoothie King,462,NA,NA
+95,Mellow Mushroom,461,NA,NA
+96,The Capital Grille,461,NA,NA
+97,Round Table Pizza,450,NA,NA
+98,Miller's Ale House,446,NA,NA
+99,Potbelly sandwich Shop,446,NA,NA
+100,Hungry Howie's Pizza,439,NA,NA
+101,Charleys Philly Steaks,435,NA,NA
+102,Chuy's,426,Austin,TX
+103,O'Charley's,426,Nashville,TN
+104,Pollo Tropical,425,Miami,FL
+105,Maggiano's Little Italy,417,Dallas,TX
+106,Cicis,410,Coppell,TX
+107,Long John Silver's,404,Louisville,KY
+108,Saltgrass Steak House,402,Houston,TX
+109,Chuck E. Cheese's,381,Irving,TX
+110,Taco John's,373,Cheyenne,WY
+111,Texas de Brazil Churrascaria,370,Dallas,TX
+112,Cold Stone Creamery,369,Scottsdale,AZ
+113,Blaze Pizza,366,Pasadena,CA
+114,Peet's Coffee,357,Emeryville,CA
+115,Dickey's Barbecue Pit,349,Dallas,TX
+116,Zoes Kitchen,348,Plano,TX
+117,Corner Bakery_Cafe,348,Dallas,TX
+118,Krystal Co.,343,Dunwoody,GA
+119,Benihana,340,Doral,FL
+120,Cooper's Hawk Winery & Restaurants,338,Countryside,IL
+121,Big Boy/Frisch's Big Boy,338,Warren,MI
+122,Black Bear Diner,336,Redding,CA
+123,Twin Peaks,335,Dallas,TX
+124,Schlotzsky's,335,Atlanta,GA
+125,Jet's Pizza,331,Sterling Heights,MI
+126,Famous Dave's,329,Minnetonka,MN
+127,On The Border Mexican Grill & Cantina,327,Irving,TX
+128,Fogo de Chao,326,Plano,TX
+129,Ninety Nine Restaurants,324,Woburn,MA
+130,Village Inn,313,Denver,CO
+131,Taco Cabana,311,Addison,TX
+132,Fleming's Prime Steakhouse & Wine Bar,307,Tampa,FL
+133,Caribou Coffee,306,Minneapolis,MN
+134,Jack's,290,Birmingham,AL
+135,Au Bon Pain,289,Boston,MA
+136,Bar Louie,284,Addison,TX
+137,Sarku Japan,281,New York,NY
+138,Old Chicago Pizza & Taproom,275,Chattanooga,TN
+139,Rally's Hamburgers,275,Lexington,KY
+140,Torchy's Tacos,272,"Austin,",TX
+141,Pizza Ranch,269,Orange City,IA
+142,Pappadeaux Seafood Kitchen,269,Houston,TX
+143,Braum's Ice Cream & Dairy Stores,268,Oklahoma City,OK
+144,Pei Wei Asian Diner,268,Irving,TX
+145,Cafe Rio Mexican Grill,267,Salt Lake City,UT
+146,Morton's The Steakhouse,266,Houston,TX
+147,Smashburger,265,Denver,CO
+148,Wienerschnitzel,265,Irvine,CA
+149,Sizzler,259,Mission Viejo,CA
+150,Seasons 52,253,Orlando,FL
+151,Bahama Breeze Island Grille,252,NA,NA
+152,Pret A Manger,252,NA,NA
+153,Godfather's Pizza,250,NA,NA
+154,Huddle House,247,NA,NA
+155,Mastro's Restaurants,242,NA,NA
+156,Uncle Julio's,239,NA,NA
+157,Fazoli's,238,NA,NA
+158,Rubio's,232,NA,NA
+159,Legal Sea Foods,227,NA,NA
+160,A&W All-American Food,227,NA,NA
+161,Newk's Eatery,227,NA,NA
+162,Fuzzy's Taco Shop,225,NA,NA
+163,Sbarro,218,NA,NA
+164,Romano's Macaroni Grill,218,NA,NA
+165,Brio Tuscan Grille,217,NA,NA
+166,Lazy Dog Restaurant & Bar,213,NA,NA
+167,Souplantation & Sweet Tomatoes,211,NA,NA
+168,Friendly's,210,NA,NA
+169,Del Frisco's Double Eagle Steak House,205,NA,NA
+170,Penn Station East Coast Subs,201,NA,NA
+171,Cinnabon,201,NA,NA
+172,Uno Pizzeria & Grill,196,NA,NA
+173,J. Alexander's,195,NA,NA
+174,Luby's,195,NA,NA
+175,Which Wich,193,NA,NA
+176,Firebirds Wood Fired Grill,192,NA,NA
+177,Le Pain Quotidien,192,NA,NA
+178,Sonny's BBQ,191,NA,NA
+179,True Food Kitchen,190,NA,NA
+180,Buca di Beppo,189,NA,NA
+181,Hard Rock Cafe,187,NA,NA
+182,Johnny Rockets,186,NA,NA
+183,Fuddruckers,185,NA,NA
+184,The Original Pancake House,185,NA,NA
+185,Sweetgreen,184,NA,NA
+186,Golden Chick,183,NA,NA
+187,Mountain Mike's Pizza,181,NA,NA
+188,Bubba Gump Shrimp Co.,181,NA,NA
+189,The Melting Pot,181,NA,NA
+190,Farmer Boys,179,NA,NA
+191,Donatos Pizza,179,NA,NA
+192,Shoney's,179,NA,NA
+193,Taco Bueno,178,NA,NA
+194,Claim Jumper,177,NA,NA
+195,Wetzel's Pretzels,177,NA,NA
+196,La Madeleine Country French Cafe,174,NA,NA
+197,Giordano's,173,NA,NA
+198,Islands Fine Burgers & Drinks,173,NA,NA
+199,Mimi's Bistro & Bakery,172,NA,NA
+200,Beef 'O' Brady's,171,NA,NA
+201,Metro Diner,171,NA,NA
+202,Bill Miller Bar-B-Q,170,NA,NA
+203,Black Angus Steakhouse,168,NA,NA
+204,Smokey Bones Bar & Fire Grill,168,NA,NA
+205,Joe's Crab Shack,166,NA,NA
+206,LaRosa's Pizzeria,164,NA,NA
+207,Roosters,163,NA,NA
+208,Great Harvest Bread Co.,162,NA,NA
+209,Shari's Cafe and Pies,161,NA,NA
+210,Lee's Famous Recipe Chicken,161,NA,NA
+211,Wayback Burgers,159,NA,NA
+212,McCormick & Schmick's,157,NA,NA
+213,Grand Lux Cafe,157,NA,NA
+214,Anthony's Coal Fired Pizza,153,NA,NA
+215,Chicken Salad Chick,153,NA,NA
+216,Paris Baguette,152,NA,NA
+217,Eat'n Park,152,NA,NA
+218,Hurricane Grill & Wings,151,NA,NA
+219,The Old Spaghetti Factory,150,NA,NA
+220,Taziki's Mediterranean Cafe,149,NA,NA
+221,Menchie's Frozen Yogurt,149,NA,NA
+222,Bruegger's Bagels,148,NA,NA
+223,Tijuana Flats,147,NA,NA
+224,Duffy's Sports Grill,144,NA,NA
+225,Eddie V's Prime Seafood,144,NA,NA
+226,Topgolf,144,NA,NA
+227,Ocean Prime,144,NA,NA
+228,Pappasito's Cantina,143,NA,NA
+229,Pollo Campero,143,NA,NA
+230,Houlihan's,143,NA,NA
+231,Old Country Buffet/HomeTown Buffet,142,NA,NA
+232,Great American Cookies,142,NA,NA
+233,Nobu,139,NA,NA
+234,BurgerFi,138,NA,NA
+235,Mission BBQ,136,NA,NA
+236,Walk-On's Sports Bistreaux,133,NA,NA
+237,The Coffee Bean & Tea Leaf,133,NA,NA
+238,Yogurtland,132,NA,NA
+239,Daylight Donuts,132,NA,NA
+240,WaBa Grill,132,NA,NA
+241,54th Street Restaurant & Drafthouse,131,NA,NA
+242,Biggby Coffee,129,NA,NA
+243,Costa Vida Fresh Mexican Grill,129,NA,NA
+244,L&L Hawaiian Barbecue,129,NA,NA
+245,Gyu-Kaku,129,NA,NA
+246,Rainforest Cafe,129,NA,NA
+247,PDQ,127,NA,NA
+248,Lupe Tortilla,127,NA,NA
+249,Cook-Out Restaurant,126,NA,NA
+250,Jollibee,126,NA,NA
