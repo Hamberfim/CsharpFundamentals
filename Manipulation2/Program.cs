@@ -6,7 +6,7 @@
 * OS          : Windows 10, Visual Studio 2019 community
 * Copyright   : Work based on needed
 *               specifications or project scope
-* Description : Using StreamReader Manipulate the read input 
+* Description : Using StreamReader to Manipulate the read input 
 *               and utilize user selection   
 ***************************************************************/
 using System;
@@ -23,9 +23,10 @@ namespace Manipulation2
             Console.Title = "Manipulate Read Input";
 
             string path = Directory.GetCurrentDirectory();
-            path = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(path)));  // up three levels
+            Console.WriteLine($"Current path:\n{path}");
+            // path = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(path)));  // up three levels to project dir
             path += "\\_db";  // directory where csv files are located with in the project directory
-            Console.WriteLine(path);
+            Console.WriteLine($"Read Directory:\n{path}");
             DirectoryInfo di = new DirectoryInfo(path);
             FileInfo[] files = di.GetFiles("*.csv");  // get name of csv files
             
@@ -78,7 +79,7 @@ namespace Manipulation2
                             sub[2] = string.Format("{0:C2}", Convert.ToDecimal(sub[2]));
                         }
 
-                        line = String.Format("{0,-9}{1,-43}{2,-20}{3,-15}{4,-16}", sub[0], sub[1], sub[2], sub[3], sub[4]);  // manipulate padding
+                        line = String.Format("{0,-9}{1,-43}{2,-20}{3,-20}{4,-15}", sub[0], sub[1], sub[2], sub[3], sub[4]);  // manipulate padding
                         Console.WriteLine(line);
                     }
                     Console.WriteLine();
@@ -91,6 +92,7 @@ namespace Manipulation2
 
 
             Console.WriteLine("\n\n\n");
+
         }
     }
 }

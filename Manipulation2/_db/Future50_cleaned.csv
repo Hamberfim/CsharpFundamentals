@@ -1,7 +1,7 @@
 Rank,Restaurant,Sales,City,State
 1,Evergreens,240000,Seattle,Wash.
 2,Clean Juice,440000,Charlotte,N.C.
-3,Slapfish,210000,Huntington Beach, Calif.
+3,Slapfish,210000,Huntington Beach,Calif.
 4,Clean Eatz,250000,Wilmington,N.C.
 5,Pokeworks,490000,Irvine,Calif.
 6,Playa Bowls,390000,Belmar,N.J.
@@ -41,7 +41,7 @@ Rank,Restaurant,Sales,City,State
 40,The Flying Biscuit Cafe,290000,Atlanta,Ga.
 41,Blue Sushi Sake Grill,490000,Omaha,Neb.
 42,The Human Bean,470000,Medford,Ore.
-43,Spitz Mediterranean Street Food,280000,Los Angeles, Calif.
+43,Spitz Mediterranean Street Food,280000,Los Angeles,Calif.
 44,Tacos 4 Life,250000,Conway,Ark.
 45,Pita Mediterranean Street Food,380000,Fairburn,Ga.
 46,LA Crawfish,480000,McAllen,Texas
