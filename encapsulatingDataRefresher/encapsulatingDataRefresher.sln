@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "encapsulatingDataRefresher", "encapsulatingDataRefresher.csproj", "{6CA15552-521B-4907-957D-9B54DE044946}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6CA15552-521B-4907-957D-9B54DE044946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA15552-521B-4907-957D-9B54DE044946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA15552-521B-4907-957D-9B54DE044946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA15552-521B-4907-957D-9B54DE044946}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9FF0399-F57E-4FB7-96BB-31E15CFF9C6E}
+	EndGlobalSection
+EndGlobal
