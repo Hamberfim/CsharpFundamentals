@@ -6,7 +6,7 @@
 * OS          : Windows 10, Visual Studio 2019 community
 * Copyright   : Work based on needed
 *               specifications or project scope
-* Description : using constructor methods vds setter/getter methods        
+* Description : using constructor methods vs setter/getter methods        
 ***************************************************************/
 using System;
 
