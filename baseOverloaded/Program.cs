@@ -17,7 +17,7 @@ namespace baseOverloaded
         // base class
         public class Employee
         {
-            private string fname, lname, department, title;
+            private string fname, lname, department, title, email;
             private double salary;
 
             // default constructor
@@ -45,9 +45,9 @@ namespace baseOverloaded
             }
 
             // overloaded constructor
-            public Employee(string fname, string lname, string department, string title, double salary)
+            public Employee(string fname, string lname, string department, string title, double salary, string email)
             {
-                Console.WriteLine($"{fname} {lname}, {department}, {title}, {salary:C}");
+                Console.WriteLine($"{fname} {lname}, {department}, {title}, {salary:C}, {email}");
             }
 
             //////////////////////////////////////////////////////////////////////////////////////////
@@ -78,14 +78,20 @@ namespace baseOverloaded
                 this.salary = salary;
             }
 
+            public void setEmail(string email)
+            {
+                this.email = email;
+            }
+
             // set all values
-            public void setAllValues(string fname, string lname, string department, string title, double salary)
+            public void setAllValues(string fname, string lname, string department, string title, double salary, string email)
             {
                 this.fname = fname;
                 this.lname = lname;
                 this.department = department;
                 this.title = title;
                 this.salary = salary;
+                this.email = email;
             }
 
             // getters
@@ -113,15 +119,18 @@ namespace baseOverloaded
                 return salary;
             }
 
+            public string getEmail()
+            {
+                return email;
+            }
+
             //get All
             public string getAllValues()
             {
-                return $"{fname} {lname}, {department}, {title}, {salary:c}";
+                return $"{fname} {lname}, {department}, {title}, {salary:c}, {email}";
             }
 
         }
-
-
 
         static void Main(string[] args)
         {
@@ -130,7 +139,7 @@ namespace baseOverloaded
             Employee billWilliamName = new Employee("bill", "William");
             Employee billWilliamDept = new Employee("bill", "William", "accounting");
             Employee billWilliamTitle = new Employee("bill", "William", "accounting", "manager");
-            Employee billWilliamSalary = new Employee("bill", "William", "accounting", "manager", 74000.00);
+            Employee billWilliamSalary = new Employee("bill", "William", "accounting", "manager", 74000.00, "williamb@fake.org");
 
             Console.WriteLine();
 
@@ -140,7 +149,7 @@ namespace baseOverloaded
             lindaGarcia.setlName("Garcia");
             Console.WriteLine($"{lindaGarcia.getfName()} {lindaGarcia.getlName()}");
 
-            lindaGarcia.setAllValues("linda", "garcia", "human resource", "director", 62500.00);
+            lindaGarcia.setAllValues("linda", "garcia", "human resources", "director", 62500.00, "garcial@fake.org");
             Console.WriteLine(lindaGarcia.getAllValues());
 
             Console.WriteLine("\n\n");
