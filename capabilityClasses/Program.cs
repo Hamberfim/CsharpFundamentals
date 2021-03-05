@@ -6,7 +6,7 @@
 * OS          : Windows 10, Visual Studio 2019 community
 * Copyright   : Work based on needed
 *               specifications or project scope
-* Description : Provide capabilities to a derived class        
+* Description : Provide capabilities to a derived class compared to the directingMethodCalls project       
 ***************************************************************/
 using System;
 
@@ -14,7 +14,7 @@ namespace capabilityClasses
 {
     class Program
     {
-        public abstract class Bird
+        public abstract class Bird  // abstract so the class can only be implemented in a derived class
         {
             public abstract void talk();
 
@@ -22,7 +22,7 @@ namespace capabilityClasses
         }
 
         // derived class
-        public sealed class Pigeon : Bird
+        public sealed class Pigeon : Bird  // sealed prevents the class from being used as a base class
         {
             public override void talk()
             {
