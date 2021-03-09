@@ -45,6 +45,11 @@ namespace castingMathRandom
             string verbatimString = @"Press the   ""Space Bar""   or   ""X""   to exit program.";
             Console.WriteLine(verbatimString);
 
+            string myNullString = null;
+            Console.WriteLine($"My Null String is: {myNullString}");
+            myNullString = "Now Not Null";
+            Console.WriteLine($"My Null String is: {myNullString}");
+
             Console.WriteLine("\n\n");
         }
     }
