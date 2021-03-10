@@ -52,6 +52,7 @@ namespace convertMethodsFormattedStrings
             // float convertion methods and ways to output/display
             Console.WriteLine(measurement + " <-- initial var value");
             Console.WriteLine($"The measurement: {measurement:f3}");  // float with three decimal places
+            Console.WriteLine($"The measurement using f9 for nine decimal places: {measurement:f9}");  // float with nine decimal places filling zero where no value exists
             string measurementPrecision = measurement.ToString("f4");  // float with four decimal places
             Console.WriteLine("The precision measurement: " + measurementPrecision);
 
@@ -67,6 +68,15 @@ namespace convertMethodsFormattedStrings
             Console.WriteLine($"The hex color: #{bRGB.ToString("x6")}");  // prefix zeros for a total of 6 hex position
             string hexFromRGB = $"RGB({rRGB}, {gRGB}, {bRGB}) to hex is #{rRGB.ToString("x2")}{gRGB.ToString("x2")}{bRGB.ToString("x")}";  // x2 = prefix zeros for rgb values of zero
             Console.WriteLine(hexFromRGB);
+
+            Console.WriteLine();  // space in output
+
+            // digits convertion methods and ways to output/display
+            int smNumber = 12;
+            Console.WriteLine(smNumber + " <-- initial var value");
+            Console.WriteLine($"The smNumber with six added digit positions: {smNumber:d6}");  // float with three decimal places
+            string smNumberEnlarged = smNumber.ToString("d9");  // float with four decimal places
+            Console.WriteLine("The smNumber enlarged to nine digits: " + smNumberEnlarged);
 
             Console.WriteLine("\n\n");
         }
