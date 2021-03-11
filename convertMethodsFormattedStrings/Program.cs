@@ -30,7 +30,13 @@ namespace convertMethodsFormattedStrings
             // String.Format() example - works the same with all the formatting codes below
             string payAmount = String.Format("{0:C}", amount);
             Console.WriteLine("String.Format() method: " + payAmount);
+            Console.WriteLine();  // space in output
 
+            // currency rounds off when decimal position 0 (zero) is declared
+            double bookPrice = 39.49;
+            Console.WriteLine($"bookPrice = {bookPrice}, using {{bookPrice:C0}} = {bookPrice:C0}");
+            bookPrice = 39.50;  // use :f2 to force zero to show up on the .50
+            Console.WriteLine($"bookPrice = {bookPrice:f2}, using {{bookPrice:C0}} = {bookPrice:C0}");
             Console.WriteLine();  // space in output
 
             // percent convertion methods and ways to output/display
