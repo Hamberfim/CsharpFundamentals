@@ -20,7 +20,7 @@ namespace ToStringParseTryParse
             Console.WriteLine(weekProfit + " is a " + weekProfit.GetType());
             Console.WriteLine();
 
-            // Parse strings to doubles
+            // Parse strings to doubles - Parse() any numeric string to any data type
             Console.WriteLine(" === Double.Parse() === ");
             double wkSales = Double.Parse(weekSales);
             double wkOverhead = Double.Parse(weekOverhead);
@@ -29,6 +29,30 @@ namespace ToStringParseTryParse
             Console.WriteLine(wkOverhead + " is a " + wkOverhead.GetType());
             Console.WriteLine(wkProfit + " is a " + wkProfit.GetType());
             Console.WriteLine();
+
+            // Parse() exception because of non-numeric charater(s)
+            Console.WriteLine(" === .Parse() Exception === ");
+            string lunchBill = "$12.99";
+            try
+            {
+                decimal lunchBillDecimal = Decimal.Parse(lunchBill);
+            }
+            catch (Exception error)
+            {
+                Console.WriteLine($"Attempted 'lunchBillDecimal = Decimal.Parse(lunchBill)' where lunchBill == {lunchBill}");
+                Console.WriteLine($"{error.Message}");
+                Console.WriteLine($"!!! Non-Numeric charater in string !!!");
+                Console.WriteLine();
+            }
+            finally
+            {
+                lunchBill = "12.99";
+                decimal lunchBillDecimal = Decimal.Parse(lunchBill);
+                Console.WriteLine($"Attempted 'lunchBillDecimal = Decimal.Parse(lunchBill)' where lunchBill == {lunchBill}");
+                Console.WriteLine($"lunchBillDecimal = {lunchBillDecimal}");
+            }
+            Console.WriteLine();
+
 
             // TryParse()
             Console.WriteLine(" === Decimal.TryParse() === ");
