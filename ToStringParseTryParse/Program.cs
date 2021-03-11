@@ -20,7 +20,7 @@ namespace ToStringParseTryParse
             Console.WriteLine(weekProfit + " is a " + weekProfit.GetType());
             Console.WriteLine();
 
-            // Parse strings to doubles - Parse() any numeric string to any data type
+            // Parse strings to doubles - Parse() and TryParse() are used on strings to convert a numerical string to any numerical data type
             Console.WriteLine(" === Double.Parse() === ");
             double wkSales = Double.Parse(weekSales);
             double wkOverhead = Double.Parse(weekOverhead);
@@ -53,7 +53,6 @@ namespace ToStringParseTryParse
             }
             Console.WriteLine();
 
-
             // TryParse()
             Console.WriteLine(" === Decimal.TryParse() === ");
             decimal wks;
@@ -67,7 +66,18 @@ namespace ToStringParseTryParse
             Console.WriteLine(wkp + " is a " + wkp.GetType());
             Console.WriteLine();
 
-            // Convert.To...
+            // TryParse() fail - results in a zero value
+            Console.WriteLine(" === TryParse() fail === ");
+            Double breakfastPaid;
+            string breakfastBill = "$3.99";  // Non-numerical charater '$'
+            Double.TryParse(breakfastBill, out breakfastPaid);
+            Console.WriteLine($"breakfastPaid = {breakfastPaid}");
+            breakfastBill = "3.99";
+            Double.TryParse(breakfastBill, out breakfastPaid);
+            Console.WriteLine($"breakfastPaid = {breakfastPaid}");
+            Console.WriteLine();
+
+            // Convert.To...  Convert is used to convert any data type to any other data type
             string strNum = "10";
             int intStrNum = Convert.ToInt32(strNum);
             Console.WriteLine(intStrNum + " is a " + intStrNum.GetType());
