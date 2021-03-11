@@ -29,9 +29,21 @@ namespace nullableValueTypes
             catch (Exception error)
             {
                 Console.WriteLine($"{error.Message}  !!! You didn't enter a quantity !!!");
-                userQty = userQty.GetValueOrDefault();
-                totalSale = totalSale.GetValueOrDefault();
-                Console.WriteLine(($"You have chosen {userQty} widgets @ {pricePerUnit:C2} per item for a total of {totalSale:c2}"));
+                int userQtyNull = userQty.GetValueOrDefault();
+                double totalSaleNull = totalSale.GetValueOrDefault();
+                Console.WriteLine(($"You have chosen {userQtyNull} widgets @ {pricePerUnit:C2} per item for a total of {totalSaleNull:c2}"));
+            }
+
+            Console.WriteLine();
+            if (userQty.HasValue)
+            {
+                int qty = userQty.Value;
+                Console.WriteLine($"User Quantity not null: {qty}");
+            }
+            else
+            {
+                int qty = userQty ??= -1;
+                Console.WriteLine($"User Quantity null: {qty}");
             }
 
             Console.WriteLine("\n\n");
