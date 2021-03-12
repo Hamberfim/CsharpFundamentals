@@ -78,5 +78,6 @@ namespace InvoiceTotal
         {
             this.Close();
         }
+
     }
 }
