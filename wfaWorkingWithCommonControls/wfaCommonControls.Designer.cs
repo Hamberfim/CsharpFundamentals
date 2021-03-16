@@ -33,6 +33,10 @@ namespace wfaWorkingWithCommonControls
             this.lblWordChange = new System.Windows.Forms.Label();
             this.btnChangeWords = new System.Windows.Forms.Button();
             this.btnShowMessageBox = new System.Windows.Forms.Button();
+            this.lblGuessNumber = new System.Windows.Forms.Label();
+            this.txtGuessBox = new System.Windows.Forms.TextBox();
+            this.btnGuess = new System.Windows.Forms.Button();
+            this.lblHighLowGuessIndicator = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblTitleHeader
@@ -81,11 +85,53 @@ namespace wfaWorkingWithCommonControls
             this.btnShowMessageBox.MouseLeave += new System.EventHandler(this.btnShowMessageBox_MouseLeave);
             this.btnShowMessageBox.MouseHover += new System.EventHandler(this.btnShowMessageBox_MouseHover);
             // 
+            // lblGuessNumber
+            // 
+            this.lblGuessNumber.AutoSize = true;
+            this.lblGuessNumber.Location = new System.Drawing.Point(56, 149);
+            this.lblGuessNumber.MaximumSize = new System.Drawing.Size(270, 0);
+            this.lblGuessNumber.MinimumSize = new System.Drawing.Size(270, 0);
+            this.lblGuessNumber.Name = "lblGuessNumber";
+            this.lblGuessNumber.Size = new System.Drawing.Size(270, 26);
+            this.lblGuessNumber.TabIndex = 4;
+            this.lblGuessNumber.Text = "I have a number I\'m holding in memory between 1-20. Can you guess what the number" +
+    " is?";
+            // 
+            // txtGuessBox
+            // 
+            this.txtGuessBox.Location = new System.Drawing.Point(56, 184);
+            this.txtGuessBox.Name = "txtGuessBox";
+            this.txtGuessBox.Size = new System.Drawing.Size(99, 20);
+            this.txtGuessBox.TabIndex = 5;
+            // 
+            // btnGuess
+            // 
+            this.btnGuess.Location = new System.Drawing.Point(161, 183);
+            this.btnGuess.Name = "btnGuess";
+            this.btnGuess.Size = new System.Drawing.Size(195, 23);
+            this.btnGuess.TabIndex = 6;
+            this.btnGuess.Text = "Guess";
+            this.btnGuess.UseVisualStyleBackColor = true;
+            this.btnGuess.Click += new System.EventHandler(this.btnGuess_Click);
+            // 
+            // lblHighLowGuessIndicator
+            // 
+            this.lblHighLowGuessIndicator.AutoSize = true;
+            this.lblHighLowGuessIndicator.Location = new System.Drawing.Point(56, 219);
+            this.lblHighLowGuessIndicator.Name = "lblHighLowGuessIndicator";
+            this.lblHighLowGuessIndicator.Size = new System.Drawing.Size(16, 13);
+            this.lblHighLowGuessIndicator.TabIndex = 7;
+            this.lblHighLowGuessIndicator.Text = "...";
+            // 
             // wfaCommonControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(426, 450);
+            this.Controls.Add(this.lblHighLowGuessIndicator);
+            this.Controls.Add(this.btnGuess);
+            this.Controls.Add(this.txtGuessBox);
+            this.Controls.Add(this.lblGuessNumber);
             this.Controls.Add(this.btnShowMessageBox);
             this.Controls.Add(this.btnChangeWords);
             this.Controls.Add(this.lblWordChange);
@@ -104,6 +150,10 @@ namespace wfaWorkingWithCommonControls
         private System.Windows.Forms.Label lblWordChange;
         private System.Windows.Forms.Button btnChangeWords;
         private System.Windows.Forms.Button btnShowMessageBox;
+        private System.Windows.Forms.Label lblGuessNumber;
+        private System.Windows.Forms.TextBox txtGuessBox;
+        private System.Windows.Forms.Button btnGuess;
+        private System.Windows.Forms.Label lblHighLowGuessIndicator;
     }
 }
 
