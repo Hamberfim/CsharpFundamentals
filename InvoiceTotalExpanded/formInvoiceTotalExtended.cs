@@ -2,7 +2,7 @@
 * Name        : InvoiceTotalExpanded
 * Author      : Anthony Hamlin
 * Created     : 03/22/2021
-* Version     : 1.0
+* Version     : 1.5
 * OS          : Windows 10, Visual Studio 2019 community
 * Copyright   : Work based on needed
 *               specifications or project scope
