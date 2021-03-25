@@ -45,7 +45,8 @@ namespace InvoiceTotalExpanded
                 *  discount that's based on the value of the subtotal
                 ****************************************************/
 
-                decimal subtotal = Convert.ToDecimal(txtSubtotalEntry.Text);
+                // decimal subtotal = Convert.ToDecimal(txtSubtotalEntry.Text);
+                decimal subtotal = Decimal.Parse(txtSubtotalEntry.Text);
                 decimal discountPercent = 0m;
                 // determine discount percent based on subtotal value
                 if (subtotal >= 500)
@@ -63,13 +64,13 @@ namespace InvoiceTotalExpanded
 
                 // calculate discount amount based on subtotal value
                 decimal discountAmount = Math.Round(subtotal * discountPercent, 2);
-                decimal invoiceTotal = subtotal - discountAmount;
+                decimal invoiceTotal = Math.Round(subtotal - discountAmount, 2);
 
                 // set the value for the ready only text box display
                 txtSubtotal.Text = subtotal.ToString("C");
                 txtDiscountPercent.Text = discountPercent.ToString("p1");
-                txtDiscountAmount.Text = discountAmount.ToString("C");
-                txtTotal.Text = invoiceTotal.ToString("C");
+                txtDiscountAmount.Text = discountAmount.ToString("C2");
+                txtTotal.Text = invoiceTotal.ToString("C2");
 
                 // calculated expanded field values
                 numberOfInvoices++;
