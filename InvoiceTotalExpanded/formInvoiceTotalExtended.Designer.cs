@@ -49,6 +49,11 @@ namespace InvoiceTotalExpanded
             this.btnClear = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
+            this.lblLargestInvoice = new System.Windows.Forms.Label();
+            this.lblSmallestInvoice = new System.Windows.Forms.Label();
+            this.txtLargestInvoice = new System.Windows.Forms.TextBox();
+            this.txtSmallestInvoice = new System.Windows.Forms.TextBox();
+            this.hrdivider = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblEnterSubtotal
@@ -138,7 +143,7 @@ namespace InvoiceTotalExpanded
             // lblNumInvoices
             // 
             this.lblNumInvoices.AutoSize = true;
-            this.lblNumInvoices.Location = new System.Drawing.Point(285, 76);
+            this.lblNumInvoices.Location = new System.Drawing.Point(250, 66);
             this.lblNumInvoices.Name = "lblNumInvoices";
             this.lblNumInvoices.Size = new System.Drawing.Size(102, 13);
             this.lblNumInvoices.TabIndex = 10;
@@ -146,7 +151,7 @@ namespace InvoiceTotalExpanded
             // 
             // txtNumInvoices
             // 
-            this.txtNumInvoices.Location = new System.Drawing.Point(389, 73);
+            this.txtNumInvoices.Location = new System.Drawing.Point(353, 63);
             this.txtNumInvoices.Name = "txtNumInvoices";
             this.txtNumInvoices.ReadOnly = true;
             this.txtNumInvoices.Size = new System.Drawing.Size(100, 20);
@@ -155,7 +160,7 @@ namespace InvoiceTotalExpanded
             // lblTotalOfInvoices
             // 
             this.lblTotalOfInvoices.AutoSize = true;
-            this.lblTotalOfInvoices.Location = new System.Drawing.Point(285, 106);
+            this.lblTotalOfInvoices.Location = new System.Drawing.Point(250, 93);
             this.lblTotalOfInvoices.Name = "lblTotalOfInvoices";
             this.lblTotalOfInvoices.Size = new System.Drawing.Size(91, 13);
             this.lblTotalOfInvoices.TabIndex = 12;
@@ -163,7 +168,7 @@ namespace InvoiceTotalExpanded
             // 
             // txtTotalOfInvoices
             // 
-            this.txtTotalOfInvoices.Location = new System.Drawing.Point(389, 103);
+            this.txtTotalOfInvoices.Location = new System.Drawing.Point(353, 90);
             this.txtTotalOfInvoices.Name = "txtTotalOfInvoices";
             this.txtTotalOfInvoices.ReadOnly = true;
             this.txtTotalOfInvoices.Size = new System.Drawing.Size(100, 20);
@@ -172,7 +177,7 @@ namespace InvoiceTotalExpanded
             // lblInvoiceAvg
             // 
             this.lblInvoiceAvg.AutoSize = true;
-            this.lblInvoiceAvg.Location = new System.Drawing.Point(285, 137);
+            this.lblInvoiceAvg.Location = new System.Drawing.Point(250, 120);
             this.lblInvoiceAvg.Name = "lblInvoiceAvg";
             this.lblInvoiceAvg.Size = new System.Drawing.Size(88, 13);
             this.lblInvoiceAvg.TabIndex = 14;
@@ -180,7 +185,7 @@ namespace InvoiceTotalExpanded
             // 
             // txtInvoiceAvg
             // 
-            this.txtInvoiceAvg.Location = new System.Drawing.Point(389, 133);
+            this.txtInvoiceAvg.Location = new System.Drawing.Point(353, 117);
             this.txtInvoiceAvg.Name = "txtInvoiceAvg";
             this.txtInvoiceAvg.ReadOnly = true;
             this.txtInvoiceAvg.Size = new System.Drawing.Size(100, 20);
@@ -188,7 +193,7 @@ namespace InvoiceTotalExpanded
             // 
             // btnCalculate
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(244, 174);
+            this.btnCalculate.Location = new System.Drawing.Point(191, 222);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(75, 23);
             this.btnCalculate.TabIndex = 16;
@@ -198,7 +203,7 @@ namespace InvoiceTotalExpanded
             // 
             // btnClear
             // 
-            this.btnClear.Location = new System.Drawing.Point(329, 174);
+            this.btnClear.Location = new System.Drawing.Point(282, 222);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(75, 23);
             this.btnClear.TabIndex = 17;
@@ -208,7 +213,7 @@ namespace InvoiceTotalExpanded
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(414, 174);
+            this.btnExit.Location = new System.Drawing.Point(373, 222);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(75, 23);
             this.btnExit.TabIndex = 18;
@@ -226,11 +231,58 @@ namespace InvoiceTotalExpanded
             this.lblTitle.TabIndex = 19;
             this.lblTitle.Text = " Invoice Total Form  ";
             // 
+            // lblLargestInvoice
+            // 
+            this.lblLargestInvoice.AutoSize = true;
+            this.lblLargestInvoice.Location = new System.Drawing.Point(250, 147);
+            this.lblLargestInvoice.Name = "lblLargestInvoice";
+            this.lblLargestInvoice.Size = new System.Drawing.Size(86, 13);
+            this.lblLargestInvoice.TabIndex = 20;
+            this.lblLargestInvoice.Text = "Largest Invoice: ";
+            // 
+            // lblSmallestInvoice
+            // 
+            this.lblSmallestInvoice.AutoSize = true;
+            this.lblSmallestInvoice.Location = new System.Drawing.Point(250, 174);
+            this.lblSmallestInvoice.Name = "lblSmallestInvoice";
+            this.lblSmallestInvoice.Size = new System.Drawing.Size(87, 13);
+            this.lblSmallestInvoice.TabIndex = 21;
+            this.lblSmallestInvoice.Text = "Smallest Invoice:";
+            // 
+            // txtLargestInvoice
+            // 
+            this.txtLargestInvoice.Location = new System.Drawing.Point(353, 144);
+            this.txtLargestInvoice.Name = "txtLargestInvoice";
+            this.txtLargestInvoice.ReadOnly = true;
+            this.txtLargestInvoice.Size = new System.Drawing.Size(100, 20);
+            this.txtLargestInvoice.TabIndex = 22;
+            // 
+            // txtSmallestInvoice
+            // 
+            this.txtSmallestInvoice.Location = new System.Drawing.Point(353, 171);
+            this.txtSmallestInvoice.Name = "txtSmallestInvoice";
+            this.txtSmallestInvoice.ReadOnly = true;
+            this.txtSmallestInvoice.Size = new System.Drawing.Size(100, 20);
+            this.txtSmallestInvoice.TabIndex = 23;
+            // 
+            // hrdivider
+            // 
+            this.hrdivider.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.hrdivider.Location = new System.Drawing.Point(128, 213);
+            this.hrdivider.Name = "hrdivider";
+            this.hrdivider.Size = new System.Drawing.Size(325, 2);
+            this.hrdivider.TabIndex = 24;
+            // 
             // formInvoiceTotalExtended
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(524, 231);
+            this.ClientSize = new System.Drawing.Size(484, 264);
+            this.Controls.Add(this.hrdivider);
+            this.Controls.Add(this.txtSmallestInvoice);
+            this.Controls.Add(this.txtLargestInvoice);
+            this.Controls.Add(this.lblSmallestInvoice);
+            this.Controls.Add(this.lblLargestInvoice);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnClear);
@@ -281,6 +333,11 @@ namespace InvoiceTotalExpanded
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblLargestInvoice;
+        private System.Windows.Forms.Label lblSmallestInvoice;
+        private System.Windows.Forms.TextBox txtLargestInvoice;
+        private System.Windows.Forms.TextBox txtSmallestInvoice;
+        private System.Windows.Forms.Label hrdivider;
     }
 }
 

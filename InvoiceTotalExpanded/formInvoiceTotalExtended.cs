@@ -28,6 +28,8 @@ namespace InvoiceTotalExpanded
         int numberOfInvoices = 0;
         decimal totalOfInvoices = 0m;
         decimal invoiceAverage = 0m;
+        decimal largestInvoice = 0m;
+        decimal smallestInvoice = Decimal.MaxValue;
 
         public formInvoiceTotalExtended()
         {
@@ -76,11 +78,15 @@ namespace InvoiceTotalExpanded
                 numberOfInvoices++;
                 totalOfInvoices += invoiceTotal;
                 invoiceAverage = totalOfInvoices / numberOfInvoices;
+                largestInvoice = Math.Max(largestInvoice, invoiceTotal);
+                smallestInvoice = Math.Min(smallestInvoice, invoiceTotal);
 
                 // set the values for the expanded area ready only text box display
                 txtNumInvoices.Text = numberOfInvoices.ToString();
                 txtTotalOfInvoices.Text = totalOfInvoices.ToString("C");
                 txtInvoiceAvg.Text = invoiceAverage.ToString("C");
+                txtLargestInvoice.Text = largestInvoice.ToString("C");
+                txtSmallestInvoice.Text = smallestInvoice.ToString("C");
 
                 txtSubtotalEntry.Text = "";
                 txtSubtotalEntry.Focus();
@@ -101,10 +107,14 @@ namespace InvoiceTotalExpanded
             numberOfInvoices = 0;
             totalOfInvoices = 0m;
             invoiceAverage = 0m;
+            largestInvoice = 0m;
+            smallestInvoice = Decimal.MaxValue;
 
             txtNumInvoices.Text = "";
             txtTotalOfInvoices.Text = "";
             txtInvoiceAvg.Text = "";
+            txtLargestInvoice.Text = "";
+            txtSmallestInvoice.Text = "";
 
             txtSubtotalEntry.Focus();
         }
@@ -115,7 +125,5 @@ namespace InvoiceTotalExpanded
         {
             this.Close();
         }
-
-  
     }
 }
