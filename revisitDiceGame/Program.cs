@@ -48,14 +48,18 @@ namespace revisitDiceGame
                 if ((score >= 15) && (score <= 18))
                 {
                     Console.WriteLine($" Your Score is {score}. We have a winner!");
+                    Console.WriteLine(" You've won a laptop computer");
                 }
                 else if(score > 18)
                 {
                     Console.WriteLine($" WINNER! WINNER! Your Score is {score}. Because of bonus points you have a score over 18. ");
+                    Console.WriteLine(" You've won a new car!");
                 }
                 else
                 {
                     Console.WriteLine($" Your Score is {score}, sorry you lose. You need at least 15 points to win.");
+                    Console.WriteLine(" Thanks for participating.");
+
                 }
 
                 // play again
