@@ -10,6 +10,7 @@
 ***************************************************************/
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace detectFraud
 {
@@ -89,10 +90,15 @@ namespace detectFraud
                 Console.WriteLine("======= Suspicious Transactions Below (if any are flagged) =======");
                 foreach (KeyValuePair<string, string> item in ordersDict)
                 {
-                    // flag accounts starting with 9 or with negative transaction or high transaction above 1500
-                    if (item.Key.StartsWith("9") || (Convert.ToDecimal(item.Value) < 0) || (Convert.ToDecimal(item.Value) > 1500))
+                    // Assuming control of transaction numbering with no starting double letters or double numbers
+                    // flag accounts starting with double characters or with negative transaction or high transaction above 1500
+                    if ((Regex.IsMatch(item.Key, "^(aa|bb|cc|dd|ee|ff)")) || (Regex.IsMatch(item.Key, "^(00|11|22|33|44|55|66|77|88|99)")))
                     {
-                        Console.WriteLine($"Transaction id: {item.Key} of ${item.Value} !! Account number and/or amount suspicious !!");
+                        Console.WriteLine($"Transaction id: {item.Key} of ${item.Value} !! Beginning Account Numbers are Suspicious !!");
+                    }
+                    else if ((Convert.ToDecimal(item.Value) < 0) || (Convert.ToDecimal(item.Value) > 1500))
+                    {
+                        Console.WriteLine($"Transaction id: {item.Key} of ${item.Value} !! Amount suspicious !!");
                     }
                 }
 
