@@ -1,7 +1,8 @@
 ﻿/***************************************************************
 * Name        : detectFraud
 * Author      : Anthony Hamlin
-* Created     : $time$
+* Created     : 04/02/2021
+* Modfied     : 04/03/2021
 * Version     : 1.0
 * OS          : Windows 10, Visual Studio 2019 community
 * Copyright   : Work based on needed
