@@ -1,6 +1,6 @@
 ﻿<!-- bind the model to the view - strongly-typed-view -->
 @model FutureValueModel
-@{ 
+@{
     Layout = null;
 }
 <!DOCTYPE html>
@@ -20,12 +20,40 @@
     <div>
         <!-- Razor view -->
         <h1>Future Value Calculator</h1>
+        <form asp-action="Index" method="post">
+            <div>
+                <label asp-for="MonthlyInvestment">Monthly Investment: </label>
+                <input asp-for="MonthlyInvestment" />
+            </div>
+            <br />
+            <div>
+                <label asp-for="YearlyInvestmentRate">yearly Investment Rate: </label>
+                <input asp-for="YearlyInvestmentRate" />
+            </div>
+            <br />
+            <div>
+                <label asp-for="Years">Number of years: </label>
+                <input asp-for="Years" />
+            </div>
+            <br />
+            <div>
+                <label>Future Value: </label>
+                <input value="@ViewBag.FV.ToString("C2")" readonly />
+            </div>
+            <br />
+            <div>
+                <button type="submit">Calculate</button>
+                <a asp-action="Index">Clear</a>
+            </div>
+        </form>
+        <br />
+        <h3>OLD PAGE CONTENT - Future Value Calculator</h3>
         <!--  access the ViewBag properties set in the HomeController-->
         <p>Customer Name: @ViewBag.Name</p>  <!-- Name property-->
         <p>Future Value: @ViewBag.FV.ToString("C2")</p>  <!-- FV property with a ToString method and currency formating-->
 
     </div>
 
-        <!-- Scripts -->
+    <!-- Scripts -->
 </body>
 </html>
