@@ -1,0 +1,31 @@
+﻿<!-- bind the model to the view - strongly-typed-view -->
+@model FutureValueModel
+@{ 
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        /* custom css styles*/
+    </style>
+</head>
+<body>
+    <!-- Main Body Container -->
+    <div>
+        <!-- Razor view -->
+        <h1>Future Value Calculator</h1>
+        <!--  access the ViewBag properties set in the HomeController-->
+        <p>Customer Name: @ViewBag.Name</p>  <!-- Name property-->
+        <p>Future Value: @ViewBag.FV.ToString("C2")</p>  <!-- FV property with a ToString method and currency formating-->
+
+    </div>
+
+        <!-- Scripts -->
+</body>
+</html>
