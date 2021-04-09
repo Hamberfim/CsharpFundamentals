@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Anthony Hamlin",
+  "sourceName": "commentHeaderTemplate",
+  "classifications": [ "Console" ],
+  "defaultName": "NetDemoConsole",
+  "identity": "adhamlin.Comment.Header.01",
+  "name": "adhamlin.Console.01",
+  "shortName": "adhamlincon01",
+  "description": "a console template with comment header",
+  "tags": {
+    "type": "project",
+    "language": "C#"
+  },
+  "preferNameDirectory": true,
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "netcoreapp3.1",
+          "description": "Target netcoreapp3.1"
+        },
+        {
+          "choice": "netcoreapp5",
+          "description": "Target netcoreapp5"
+        }
+      ],
+      "replaces": "netcoreapp3.1",
+      "defaultValue": "netcoreapp3.1"
+    },
+    "ProjectName": {
+      "type": "parameter",
+      "defaultValue": "(insert project name)",
+      "replaces": "ProjectName",
+      "datatype": "text",
+      "description": "Project Name"
+    },
+    "AuthorName": {
+      "type": "parameter",
+      "defaultValue": "(insert author name)",
+      "replaces": "AuthorName",
+      "datatype": "text",
+      "description": "Author name"
+    },
+    "DateCreated": {
+      "type": "parameter",
+      "defaultValue": "(insert Date Created)",
+      "replaces": "DateCreated",
+      "datatype": "text",
+      "description": "Date Created"
+    },
+    "Description": {
+      "type": "parameter",
+      "defaultValue": "(insert description)",
+      "replaces": "DescriptionContent",
+      "datatype": "text",
+      "description": "Description text that will be shown for this nuget package on nuget.org"
+    }
+
+  }
+}
