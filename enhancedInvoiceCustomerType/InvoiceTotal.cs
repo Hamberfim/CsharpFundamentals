@@ -33,26 +33,34 @@ namespace enhancedInvoiceCustomerType
                 {
                     discountPercent = .1m;
                 }
-                else if(subtotal >= 250)
+                else if(subtotal >= 250 && subtotal < 500)
                 {
                     discountPercent = .25m;
+                }
+                else if (subtotal >= 500)
+                {
+                    discountPercent = .30m;
                 }
 
             }
             else if(customerType == "C")
             {
-                if(subtotal < 250)
+                discountPercent = .2m;
+            }
+            else if (customerType == "T")
+            {
+                if (subtotal < 500)
                 {
-                    discountPercent = .2m;
+                    discountPercent = .4m;
                 }
-                else
+                else if(subtotal >= 500)
                 {
-                    discountPercent = .3m;
+                    discountPercent = .5m;
                 }
             }
             else
             {
-                discountPercent = .4m;
+                discountPercent = .1m;
             }
 
             decimal discountAmount = subtotal * discountPercent;
