@@ -165,7 +165,7 @@ namespace enhancedInvoiceCustomerType
             this.Controls.Add(this.lblCustomerType);
             this.Name = "InvoiceTotal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Invoice Total";
+            this.Text = "Invoice Total Ex. 5-1";
             this.ResumeLayout(false);
             this.PerformLayout();
 
