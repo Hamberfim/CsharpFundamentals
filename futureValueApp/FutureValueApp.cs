@@ -36,6 +36,7 @@ namespace futureValue
 
                 txtFutureValue.Text = futureValue.ToString("C");
                 txtMonthlyInvestment.Focus();
+                
             }
             catch (Exception error)
             {
