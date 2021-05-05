@@ -7,7 +7,7 @@ namespace messnWithMethods
         private static decimal GetDiscountPercent(decimal subtotal)
         {
             decimal discountPercent = 0m;
-            if(subtotal >= 500)
+            if (subtotal >= 500)
             {
                 discountPercent = .2m;
             }
@@ -19,6 +19,7 @@ namespace messnWithMethods
             return discountPercent;
         }
 
+        // method parameters with default values
         private static decimal CalculateFutureValue(decimal monthlyInvestment, decimal monthlyInterestRate = 0.02m, int months = 12)
         {
             decimal futureValue = 0m;
@@ -27,8 +28,38 @@ namespace messnWithMethods
                 futureValue = (futureValue + monthlyInvestment) * (1 + monthlyInterestRate);
             }
 
-            return futureValue ;
+            return futureValue;
         }
+
+        // single statement method
+        private static void DisplayMessageOne(string message, string caption)
+        {
+            Console.WriteLine(message + ", " + caption);
+        }
+        // expression-bodied methods
+        private static void DisplayMessageTwo(string message, string caption) => Console.WriteLine(message + ", " + caption);
+
+        // single statement method
+        private static decimal GetCustTypeDiscountOne(string customerType)
+        {
+            customerType = customerType.ToUpper();
+            return customerType switch
+            {
+                "R" => 0.15m,
+                "C" => 0.2m,
+                "T" => 0.25m,
+                _ => 0.1m // default
+            };
+        }
+        // expression-bodied methods
+        private static decimal GetCustTypeDiscountTwo(string customerType) => 
+            customerType switch
+            {
+                "R" => 0.15m,
+                "C" => 0.2m,
+                "T" => 0.25m,
+                _ => 0.1m // default
+            };
 
         static void Main(string[] args)
         {
@@ -42,6 +73,7 @@ namespace messnWithMethods
             decimal monthlyInvestment1 = 100.00m;
             decimal monthlyInterestRate1 = .04m;
             int months = 12;
+            // method parameter arguments match methods listed order 
             decimal yourFutureValue1 = CalculateFutureValue(monthlyInvestment1, monthlyInterestRate1, months);
             Console.WriteLine($"Your monthly investment of {monthlyInvestment1:C} at {monthlyInterestRate1:P1} for {months} months will have a future value of {yourFutureValue1:C}");
             decimal yourFutureValue2 = CalculateFutureValue(monthlyInvestment1);
@@ -52,9 +84,30 @@ namespace messnWithMethods
             decimal investment = 125.00m;
             decimal rate = 0.034m;
             int lengthM = 10;
-            // note that the order does not match the methods' parameter list order
+            // note that the order does not match the methods' parameter list order (<parameter name>:<argument name>)
             decimal nameArgResult = CalculateFutureValue(months: lengthM, monthlyInterestRate: rate, monthlyInvestment:investment);
             Console.WriteLine($"Your investment of {investment} at {rate:P1} over {lengthM} months will result in a value of {nameArgResult:C}");
+            Console.WriteLine();
+
+            // single statement method
+            // private static void DisplayMessageOne(string message, string caption)
+            // {
+            //     Console.WriteLine(message, caption);
+            // }
+            DisplayMessageOne("Message One", "Caption One");
+            // expression-bodied method
+            // private static void DisplayMessageTwo(string message, string caption) => Console.WriteLine(message, caption);
+            DisplayMessageTwo("Message Two", "Caption Two");
+            Console.WriteLine();
+
+            decimal custDiscOne = GetCustTypeDiscountOne("C");
+            Console.WriteLine($"Customer type C discount: {custDiscOne:p1}");
+            decimal custDiscTwo = GetCustTypeDiscountTwo("T");
+            Console.WriteLine($"Customer type T discount: {custDiscTwo:p1}");
+            decimal custDiscNonType = GetCustTypeDiscountTwo("");
+            Console.WriteLine($"Customer type NONE discount: {custDiscNonType:p1}");
+
+
 
             Console.WriteLine("\n\n");
         }
