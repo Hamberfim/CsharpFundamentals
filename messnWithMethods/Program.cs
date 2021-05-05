@@ -72,6 +72,16 @@ namespace messnWithMethods
             Console.WriteLine($"my sum of 0-9: {mySum}");
         }
 
+        // method by ref and value
+        private static void CalFutValueRef(decimal monthlyInvestment, decimal monthlyInterestRate, int months, ref decimal futureValue)
+        {
+            for (int i = 0; i < months; i++)
+            {
+                futureValue = (futureValue + monthlyInvestment) * (1 + monthlyInterestRate);
+            }
+            // no return value because the ref variable in the calling method is changed
+        }
+
         static void Main(string[] args)
         {
             decimal cust1Discount = GetDiscountPercent(499.99m);
@@ -127,6 +137,16 @@ namespace messnWithMethods
             //}
             //Console.WriteLine($"my sum of 0-9: {mySum}");
             GetSum();
+            Console.WriteLine();
+
+            // ref/value
+            decimal mInvest = 140.00m;
+            decimal mInterest = 0.034m;
+            int mLenght = 13;
+            decimal futureValue = 0m;
+            // futureValue variable- the method has no 'return value' because the ref variable in the calling method is changed when called
+            CalFutValueRef(mInvest, mInterest, mLenght, futureValue: ref futureValue);
+            Console.WriteLine($"Investment Amount: {mInvest:C}, Interest Rate: {mInterest:P1}, Number of months: {mLenght}, Future Value: {futureValue:C}");
 
             Console.WriteLine("\n\n");
         }
