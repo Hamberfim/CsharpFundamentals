@@ -1,4 +1,4 @@
-## C# Fundamentals*
+### C# Fundamentals*
 #### Getting the Basics Down</br>
 <sub>*Started February 3rd, 2021</sub></br>
 <sub>Rebase/New Repo February 10th, 2021</sub></br>
