@@ -61,6 +61,17 @@ namespace messnWithMethods
                 _ => 0.1m // default
             };
 
+        // refactor created a new method
+        private static void GetSum()
+        {
+            int mySum = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                mySum = mySum + i;
+            }
+            Console.WriteLine($"my sum of 0-9: {mySum}");
+        }
+
         static void Main(string[] args)
         {
             decimal cust1Discount = GetDiscountPercent(499.99m);
@@ -106,8 +117,16 @@ namespace messnWithMethods
             Console.WriteLine($"Customer type T discount: {custDiscTwo:p1}");
             decimal custDiscNonType = GetCustTypeDiscountTwo("");
             Console.WriteLine($"Customer type NONE discount: {custDiscNonType:p1}");
+            Console.WriteLine();
 
-
+            // refactor to create a new method
+            //int mySum = 0;
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    mySum = mySum + i;
+            //}
+            //Console.WriteLine($"my sum of 0-9: {mySum}");
+            GetSum();
 
             Console.WriteLine("\n\n");
         }
