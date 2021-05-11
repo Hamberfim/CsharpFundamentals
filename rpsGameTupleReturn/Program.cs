@@ -4,7 +4,7 @@ namespace rpsGameTupleReturn
 {
     class Program
     {
-        // tuple pattern matching and tuple return
+        // tuple pattern matching and tuple return (using lambda)
         private static (string winMessage, string whoScored) RockPaperScissors(string playerOne, string playerTwo) => (playerOne, playerTwo) switch
         {
 			// tuple pattern to match   // return tuple - winMessage, whoScored
