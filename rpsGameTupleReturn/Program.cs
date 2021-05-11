@@ -43,22 +43,19 @@ namespace rpsGameTupleReturn
 
             // return is a tuple whos members are winMessage & whoScored
             var roundThrow = RockPaperScissors("rock", "paper");
-            // reference members score
+            // reference members winMessage
             Console.WriteLine(roundThrow.winMessage);  // what throw won
             givePoint(ref playerOneScore, ref playerTwoScore, roundThrow);  // who gets the point
 
             roundThrow = RockPaperScissors("scissors", "rock");
-            // reference members score
             Console.WriteLine(roundThrow.winMessage);
             givePoint(ref playerOneScore, ref playerTwoScore, roundThrow);
 
             roundThrow = RockPaperScissors("paper", "paper");
-            // reference members score
             Console.WriteLine(roundThrow.winMessage);
             givePoint(ref playerOneScore, ref playerTwoScore, roundThrow);
 
             roundThrow = RockPaperScissors("paper", "scissors");
-            // reference members score
             Console.WriteLine(roundThrow.winMessage);
             givePoint(ref playerOneScore, ref playerTwoScore, roundThrow);
 
