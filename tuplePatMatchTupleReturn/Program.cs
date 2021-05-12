@@ -42,10 +42,31 @@ namespace tuplePatMatchTupleReturn
             (_) => ("no measurement match", 0, 0.0m)
         };
 
+        // simple cups to grams formula -  grams = cups * 125
+        private static decimal CupsToGrams(decimal cups)
+        {
+            decimal grams = 0m;
+            grams = cups * 125.0m;
+            return grams;
+        }
+
+        // simple grams to cups formula -  cups = grams / 125
+        private static (decimal cupsQtr, decimal cupsDeci) GramsToCups(decimal grams)
+        {
+            decimal cups = 0.000m;
+            cups = grams / 125.000m;
+            decimal cupsDeci = Math.Round(cups, 2);
+            // rounding to nearest quarter  i.e. cups.25, cups.50 cups.75, cups.0
+            decimal cupsQtr = Math.Round(cups * 4, MidpointRounding.ToEven) / 4;
+            // return the tuple
+            return (cupsQtr, cupsDeci);
+        }
+
 
         static void Main(string[] args)
         {
-            Console.WriteLine("=== Approximate Dry weight Conversions ===");
+            // switch chart conversions
+            Console.WriteLine("=== Dry weight Conversions Chart ===");
             // cups input
             var flour = ToEquivalencies("1 cup");
             Console.WriteLine($"Flour: {flour.cups} = {flour.grams}g = {flour.ounces}oz.");
@@ -58,6 +79,22 @@ namespace tuplePatMatchTupleReturn
             // no measurement match
             var salt = ToEquivalencies("1/4 tsp");
             Console.WriteLine($"Salt: {salt.cups} = {salt.grams}g = {salt.ounces}oz. ");
+            Console.WriteLine();
+
+            // calculated cup to grams conversions
+            Console.WriteLine("=== Dry weight cups to grams Conversions ===");
+            decimal oneCup = CupsToGrams(1.0m);
+            Console.WriteLine($"One cup of flour is equal to {oneCup} grams.");
+            decimal threeAndOneHalfCups = CupsToGrams(3.5m);
+            Console.WriteLine($"Three and One Half cups of flour is equal to {threeAndOneHalfCups} grams.");
+            Console.WriteLine();
+
+            // calculated grams to cups conversions
+            Console.WriteLine("=== Dry weight grams to cups Conversions ===");
+            var FourThirtyFive = GramsToCups(435.5m);
+            Console.WriteLine($"435.5 grams of flour is equal to {FourThirtyFive.cupsDeci} or {FourThirtyFive.cupsQtr} cups (*rounded to nearest quarter)");
+            var TwoTwentyEight = GramsToCups(228m);
+            Console.WriteLine($"228 grams of flour is equal to {TwoTwentyEight.cupsDeci} or {TwoTwentyEight.cupsQtr} cups (*rounded to nearest quarter)");
 
             Console.WriteLine("\n\n");
         }
