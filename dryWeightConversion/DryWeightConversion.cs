@@ -4,7 +4,7 @@
 * Created     : 05/12/2021
 * Version     : 1.0
 * OS          : Windows 10, Visual Studio 2019 community
-* Copyright   : Work based on needed
+* Copyright   : MIT 2021 Anthony Hamlin
 *               specifications or project scope
 * Description : Converts dry cup/gram weights        
 ***************************************************************/
