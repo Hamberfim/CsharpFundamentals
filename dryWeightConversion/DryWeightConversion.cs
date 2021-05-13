@@ -1,4 +1,14 @@
-﻿using System;
+﻿/***************************************************************
+* Name        : dryWeightConversion
+* Author      : Anthony Hamlin
+* Created     : 05/12/2021
+* Version     : 1.0
+* OS          : Windows 10, Visual Studio 2019 community
+* Copyright   : Work based on needed
+*               specifications or project scope
+* Description : Converts dry cup/gram weights        
+***************************************************************/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
