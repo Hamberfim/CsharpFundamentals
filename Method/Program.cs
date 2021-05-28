@@ -34,7 +34,7 @@ namespace Method
             Console.WriteLine("Kelvin:\t" + bodyTempK() + "K");
 
 
-            Console.ReadKey();
+            //Console.ReadKey();
         }
     }
 }
